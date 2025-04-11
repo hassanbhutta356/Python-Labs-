@@ -1,4 +1,4 @@
-Program to find numbers divisible by 7 and multiple of 5 between a range
+#Program to find numbers divisible by 7 and multiple of 5 between a range
 start_num = int(input("Enter the start number: "))
 end_num = int(input("Enter the end number: "))
 
@@ -7,7 +7,7 @@ for number in range(start_num, end_num + 1):
         print(number)
 
 
-Temperature conversion program
+#Temperature conversion program
 def celsius_to_fahrenheit(temp_c):
     temp_f = (temp_c * 9/5) + 32
     return temp_f
@@ -33,7 +33,7 @@ else:
     print("Invalid choice. Please enter 1 or 2.")
 
 
-Number guessing game
+#Number guessing game
 import random
 target_num = random.randint(1, 9)
 
@@ -46,7 +46,7 @@ while True:
         print("Wrong guess. Try again!")
 
 
-Print pattern using nested loops
+#Print pattern using nested loops
 for row in range(1, 6):
     for col in range(row):
         print("*", end=" ")
@@ -58,13 +58,13 @@ for row in range(4, 0, -1):
     print()
 
 
-Reverse a word
+#Reverse a word
 user_word = input("Enter a word: ")
 reversed_word = user_word[::-1]
 print("Reversed word:", reversed_word)
 
 
-Count even and odd numbers
+#Count even and odd numbers
 number_input = input("Enter numbers separated by spaces: ")
 number_list = [int(value) for value in number_input.split()]
 
@@ -94,7 +94,7 @@ for val in range(7):
     print(val, end='')
 
 
-Fibonacci sequence up to 50
+#Fibonacci sequence up to 50
 num1, num2 = 0, 1
 while num1 <= 50:
     print(num1, end=' ')
@@ -113,7 +113,7 @@ for count in range(1, 51):
         print(count)
 
 
-Generate 2D array based on row and column multiplication
+#Generate 2D array based on row and column multiplication
 rows = int(input("Enter number of rows (m): "))
 cols = int(input("Enter number of columns (n): "))
 matrix = [[i * j for j in range(cols)] for i in range(rows)]
@@ -121,7 +121,7 @@ print("Generated 2D Array:")
 print(matrix)
 
 
-Accept multiple lines and print in lowercase
+#Accept multiple lines and print in lowercase
 print("Enter your lines (press Enter twice to finish):")
 line_collection = []
 while True:
@@ -135,7 +135,7 @@ for lower_line in line_collection:
     print(lower_line)
 
 
-Filter binary numbers divisible by 5
+#Filter binary numbers divisible by 5
 binary_input = input("Enter comma-separated 4-digit binary numbers: ")
 binary_items = [val.strip() for val in binary_input.split(',')]
 
@@ -145,7 +145,7 @@ filtered_bin = [binary for binary in binary_items
 print(','.join(filtered_bin))
 
 
-Count digits and letters
+#Count digits and letters
 user_input = input("Enter a string: ")
 alpha_count = 0
 digit_count = 0
@@ -160,7 +160,7 @@ print(f"Letters {alpha_count}")
 print(f"Digits {digit_count}")
 
 
-Validate password based on multiple rules
+#Validate password based on multiple rules
 import re
 
 def validate_password(user_password):
